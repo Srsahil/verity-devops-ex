@@ -19,5 +19,14 @@ stage('PMD') {
                 sh 'mvn site'
             }
         }
+
+//Code starts for stage Compile
+        stage('Compile') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+        //Code ends for stage Compile
+        
 }
 }
